@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+ * Virtina
+ * @package    Virtina_Cartcleaner
+ * @copyright  Copyright (c) 2015-2016 Virtina. (http://www.virtina.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+-->
+<config>
+    <modules>
+        <Virtina_Cartcleaner>
+            <version>0.0.1</version>
+        </Virtina_Cartcleaner>
+    </modules> 
+    <admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Virtina_Cartcleaner after="Mage_Adminhtml">Virtina_Cartcleaner_Adminhtml</Virtina_Cartcleaner>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+		<menu>
+		   <cartcleaner module="cartcleaner">
+			 <title>Cart Cleaner</title>
+			 <sort_order>70</sort_order>
+			 <action>adminhtml/cartcleaner</action>
+		   </cartcleaner>
+		 </menu>
+		 <acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+					   <cartcleaner module="cartcleaner">
+							<title>Cart Cleaner</title>
+							<sort_order>85</sort_order>						
+					   </cartcleaner>
+					</children>
+				</admin>
+			</resources>   
+			</acl>
+         <layout>
+            <updates>
+                <cartcleaner>
+                    <file>cartcleaner.xml</file>
+                </cartcleaner>
+            </updates>
+        </layout>
+	</adminhtml>
+    <global>
+	  <models>
+		<cartcleaner>
+			<class>Virtina_Cartcleaner_Model</class>	
+		</cartcleaner>
+      </models>
+	  <blocks>
+		<cartcleaner>
+		  <class>Virtina_Cartcleaner_Block</class>
+		</cartcleaner>
+	  </blocks>  
+	  <helpers>
+		<cartcleaner>
+		  <class>Virtina_Cartcleaner_Helper</class>
+		</cartcleaner>
+	  </helpers>    
+    </global>        
+</config>

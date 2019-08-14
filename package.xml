@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Virtina_Cartcleaner</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Virtina creates an extension for Magento which clears the products from customer's cart via admin.</summary>
+    <description>Virtina creates an extension for Magento which clears the products from customer's cart via admin. The extension provides an easy way to clear the cart items which have been in the cart of customer's for long time. By using this extension&#xD;
+admin can clear all cart items added by the users by clicking "Clear All Cart" Button. &#x201C;Clear Guest Cart&#x201D; Button removes all products from guest&#x2019;s cart. We have also another option to clear the cart items of selected customers. Extension will only&#xD;
+have backend settings.</description>
+    <notes>Virtina creates an extension for Magento which clears the products from customer's cart via admin. The extension provides an easy way to clear the cart items which have been in the cart of customer's for long time. By using this extension&#xD;
+admin can clear all cart items added by the users by clicking "Clear All Cart" Button. &#x201C;Clear Guest Cart&#x201D; Button removes all products from guest&#x2019;s cart. We have also another option to clear the cart items of selected customers. Extension will only&#xD;
+have backend settings.</notes>
+    <authors><author><name>Virtina</name><user>Virtina</user><email>developer@virtina.com</email></author></authors>
+    <date>2016-08-01</date>
+    <time>10:05:38</time>
+    <contents><target name="magecommunity"><dir name="Virtina"><dir name="Cartcleaner"><dir name="Block"><dir name="Adminhtml"><dir name="Cartcleaner"><file name="Grid.php" hash="b5e445da081a284f8937c316b58ee8c4"/></dir><file name="Cartcleaner.php" hash="ec532e3c0717cf44bdf0095cbd5e1b3e"/><dir name="Renderer"><file name="CustomerName.php" hash="bc8e70bb20e48f2b511daa46085fd193"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="c4206bc78cc1d0cd2232b24c53964095"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CartcleanerController.php" hash="a91f0127fea8f220f0edb80219963c42"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="e179be990e73428e32694c62eb00ad27"/><file name="config.xml" hash="0c9a76ecf9f911ab6a06e6855d13b565"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Virtina_Cartcleaner.xml" hash="82a314fcc9998599cd77375e4dc20dd5"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="cartcleaner.xml" hash="e44eeb4c49d6bd208e3fb524efaa78b3"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

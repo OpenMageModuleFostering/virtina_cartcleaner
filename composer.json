@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Virtina_Cartcleaner",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Virtina creates an extension for Magento which clears the products from customer's cart via admin.",
+    "authors": [
+    {
+        "name": "Virtina",
+        "email": "developer@virtina.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
